@@ -1,4 +1,4 @@
-# The second variant
+# The first variant
 # """
 # Вхідні дані: 3 числа x, y та z. x, y -- невід'ємні цілі числа, z дорівнює 0 або 1. x не дорівнює 0.
 # Передаються як аргументи командного рядка.
@@ -28,10 +28,10 @@ print 'Everybody sing a song:' + couplet[0:len(couplet)-1] + '.'
 
 # The second variant
 
-#import sys
+import sys
 
-#x, y, z = int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3])
+x, y, z = int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3])
 
-#couplet = ("la" if (x > 0) else "") + "-la"*(x-1)
+couplet = ("la" if (x > 0) else "") + "-la"*(x-1)
 
 print "Everybody sing a song" + (" "+couplet if couplet != "" and y > 0 else "") + (" "+couplet if couplet != "" else "")*(y-1) + ("!" if z == 1 else ".")
